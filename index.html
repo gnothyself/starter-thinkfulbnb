@@ -22,10 +22,10 @@
       <div class="logo">Thinkfulbnb</div>
       <nav>
         <ul id="menu">
-          <li><a>Stay</a></li>
-          <li><a>About</a></li>
-          <li><a>Ideas</a></li>
-          <li><a>Host</a></li>
+          <li><a href="#stay">Stay</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ideas">Ideas</a></li>
+          <li><a href="#host">Host</a></li>
         </ul>
       </nav>
     </header>
@@ -33,8 +33,54 @@
     <main>
       <!-- Stay -->
       <section id="stay">
-        <h2>Find the perfect vacation rental</h2>
-        <!-- Create a form here -->
+        <div class="group group-stay">
+          <h2>Find the perfect vacation rental</h2>
+          <!-- Form -->
+          <div class="item group">
+            <form>
+              <div class="item item-form">
+                <label for="location">Location</label>
+                <input 
+                id="location" 
+                type="text" 
+                name="location"
+                placeholder="Search destination"
+                />
+              </div>
+              <div class="item item-form">
+                <label for="arrive">Arrive</label>
+                <input 
+                id="arrive"
+                type="date"
+                date-start="arrive"
+                />
+              </div>
+              <div class="item item-form">
+                <label for="depart">Depart</label>
+                <input
+                id="depart"
+                type="date"
+                name="date-finish"
+                />
+              </div>
+              <div class="item item-form">
+                <label>Type</label>
+                <select name="type" size="1">
+                  <option value="apartment">Apartment</option>
+                  <option value="barn">Barn</option>
+                  <option value="castle">Castle</option>
+                  <option calue="houseboat">Houseboat</option>
+                  <option value="tiny house">Tiny House</option>
+                  <option value="yacht">Yacht</option>
+                  <option value="yurt">Yurt</option>
+                </select>
+              </div>
+              <div class="item item-form">
+                <button type="submit">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
 
       <!-- About -->
