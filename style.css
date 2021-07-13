@@ -147,8 +147,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-
-@media all and (min-width: 480px) {
+@media all and (min-width: 940px) {
   #stay {
     padding-top: 15px;
   }
@@ -161,18 +160,74 @@ footer p {
 
   .group {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .item-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  form label {
+    display: flex;
     flex-direction: row;
+    font-size: 14px;
+    padding-left: 90px;
+  }
+
+  form input,
+  form select {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  
+  form select {
+    height: 22px;
+  }
+
+  form button {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
+
+}
+
+
+@media all and (min-width: 480px)
+and (max-width: 940px) {
+  #stay {
+    padding-top: 15px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .group {
+    display: flex;
     justify-content: center;
   }
 
   .group-stay {
-    display: flex;
     flex-direction: column;
   }
 
   .item-form {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
@@ -180,9 +235,7 @@ footer p {
 
   form {
     display: flex;
-    padding: 0;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   form label {
@@ -198,7 +251,6 @@ footer p {
     font-size: 12px;
     margin-bottom: 0px;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: row;
   }
