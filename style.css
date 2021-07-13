@@ -150,7 +150,7 @@ footer p {
 
 @media all and (min-width: 800px) {
   #stay {
-    padding: 0px;
+    padding-top: 15px;
   }
 
   header {
