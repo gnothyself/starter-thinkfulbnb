@@ -69,6 +69,8 @@ header {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
@@ -204,17 +206,19 @@ footer p {
 
 }
 
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px; 
+  }
+}
+
 
 @media all and (min-width: 480px)
 and (max-width: 940px) {
   #stay {
     padding-top: 15px;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
   }
 
   .group {
