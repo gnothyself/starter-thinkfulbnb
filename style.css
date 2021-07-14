@@ -112,7 +112,6 @@ form {
 form label {
   display: flex;
   padding-right: 100px;
-  padding-left: 10px;
   font-weight: bold;
   text-align: left;
 }
@@ -145,25 +144,24 @@ footer {
 footer p {
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 72px;
 }
 
 /* -------  Media Query ------- */
 @media all and (min-width: 940px) {
+  
   #stay {
     padding-top: 15px;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
   }
 
   .group {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    /*justify-content: center;*/
+  }
+
+  .group-stay {
+    flex-direction: column;
   }
 
   .item-form {
@@ -172,7 +170,13 @@ footer p {
     justify-content: space-between;
     text-align: center;
   }
-  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
   form {
     display: flex;
     flex-wrap: nowrap;
@@ -180,8 +184,9 @@ footer p {
   form label {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     font-size: 14px;
-    padding-left: 90px;
+    ;
   }
 
   form input,
@@ -209,7 +214,7 @@ footer p {
 @media all and (min-width: 700px) {
   header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 14px; 
   }
 }
@@ -217,13 +222,21 @@ footer p {
 
 @media all and (min-width: 480px)
 and (max-width: 940px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    font-family: "Pangolin", cursive;
+    font-size: 75px;
+    color: #fff;
+}
+
   #stay {
     padding-top: 15px;
   }
 
   .group {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .group-stay {
@@ -246,7 +259,7 @@ and (max-width: 940px) {
     display: flex;
     flex-direction: row;
     font-size: 14px;
-    padding-left: 90px;
+    justify-content: flex-start;
   }
 
   form input,
@@ -267,6 +280,18 @@ and (max-width: 940px) {
   form button {
     font-size: 18px;
     padding: 15px 25px;
+  }
+
+}
+
+@media all and (max-width: 400px) {
+  .logo {
+    font-size: 50px;
+
+}
+  
+  form label {
+    padding-right: 0px;
   }
 
 }
